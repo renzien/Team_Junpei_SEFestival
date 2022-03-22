@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html>
+    <head>
+        <title>Learning About Mangroove</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">Junpei</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2 id="text"><span>Serang Dia</span><br>Junpei!</h2>
+            <img src="assets/img/bird1.png" id="bird1">
+            <img src="assets/img/bird2.png" id="bird2">
+            <img src="assets/img/forest.png" id="forest">
+            <a href="#" id="btn">Explore</a>
+            <img src="assets/img/rocks.png" id="rocks">
+            <img src="assets/img/water.png" id="water">
+        </section>
+        <div class="sec">
+            <h2>Asal Mula Pokemon Junpei</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere vulputate nulla quis imperdiet. Duis ac risus pulvinar, fringilla nibh a, molestie dolor. Curabitur pretium nisi sed volutpat tincidunt. Duis cursus diam ut dictum feugiat. In sit amet erat aliquam, consectetur neque quis, ultrices odio. Aenean placerat auctor lorem eget pulvinar. Suspendisse a venenatis enim, et semper lorem. Integer suscipit maximus magna quis rhoncus.
 
-</body>
+                Proin hendrerit ante non maximus placerat. Vestibulum imperdiet lorem tincidunt velit scelerisque scelerisque. Proin ut fringilla erat, et molestie turpis. Vestibulum consequat, erat at porta vehicula, erat turpis malesuada dolor, id fermentum metus arcu vel velit. Aenean enim diam, mollis nec convallis a, malesuada quis magna. Phasellus velit purus, sollicitudin interdum lobortis vehicula, consequat in ligula. Curabitur quis justo eu lorem maximus auctor vel ut ex.
+
+                Aliquam vestibulum dignissim massa. Praesent nec fermentum orci. Fusce varius, nunc vitae pretium lobortis, velit enim lobortis eros, at vestibulum mi lectus sed sapien. Etiam accumsan gravida lacus quis laoreet. Sed dictum egestas sapien non dapibus. Integer suscipit tortor vitae orci pharetra, id scelerisque felis efficitur. Quisque nec tellus eu nibh ullamcorper luctus quis id ante. Donec eget dapibus arcu. Phasellus condimentum erat vel augue ultrices congue. Suspendisse consectetur, odio non ullamcorper dictum, nisl enim congue neque, ut tristique nulla sem et velit. Curabitur libero magna, condimentum quis enim in, ultricies finibus mi. Ut nec venenatis velit.
+
+                Ut sit amet bibendum nisl. Vivamus ut condimentum leo. Mauris porta arcu magna, non semper magna tempor eu. Nullam feugiat tempor efficitur. Aliquam finibus sapien at odio gravida dictum. Vestibulum laoreet, orci eget tristique vehicula, neque nibh iaculis urna, a venenatis arcu nisi ut dolor. Ut efficitur velit justo, a vestibulum magna malesuada nec. Nam id ornare nisi.
+
+                Cras urna urna, ultrices id ullamcorper ut, porta et magna. Aenean quis ultrices nisl, sed maximus felis. Sed felis turpis, rhoncus et euismod quis, ullamcorper nec nulla. Integer dui mi, tincidunt a interdum id, tristique eget dui. Nam faucibus purus nec hendrerit pellentesque. Nullam a egestas odio. Donec aliquam nulla sem, id lobortis est luctus non. Morbi sit amet velit ut leo egestas lacinia. Pellentesque nec turpis sed purus vestibulum lacinia. Nunc tincidunt neque in nisl laoreet, eget vehicula leo varius.</p>
+        </div>
+
+        <script>
+            let text = document.getElementById('text');
+            let bird1 = document.getElementById('bird1');
+            let bird2 = document.getElementById('bird2');
+            let btn = document.getElementById('btn');
+            let rocks = document.getElementById('rocks');
+            let forest = document.getElementById('forest');
+            let water = document.getElementById('water');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function (){
+                let value = window.scrollY;
+
+                text.style.top = 50 + value * -0.5 + '%';
+                bird1.style.top = value * -1.5 + 'px';
+                bird2.style.left = value * 2 + 'px';
+                bird2.style.top = value * -1.5 + 'px';
+                bird2.style.left = value * -5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                rocks.style.top = value * -0.12 + 'px';
+                forest.style.top = value * 0.25 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
 </html>
