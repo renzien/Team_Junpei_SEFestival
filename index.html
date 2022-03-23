@@ -9,28 +9,23 @@
             <a href="#" class="logo">Lestari Mangrove</a>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </header>
         <section>
             <h2 id="text"><span>Pemantauan Citra Satelit</span><br>MANGROVE</h2>
-            <img src="assets/img/bird1.png" id="bird1">
-            <img src="assets/img/bird2.png" id="bird2">
+            <img src="assets/img/satelit.png" id="satelit">
+            <img src="assets/img/satelit1.png" id="satelit1">
             <img src="assets/img/forest.png" id="forest">
             <a href="#" id="btn">Explore</a>
             <img src="assets/img/rocks.png" id="rocks">
             <img src="assets/img/water.png" id="water">
         </section>
         <div class="sec">
-            <h1>Pemantauan Perkembangan Hutan Mangrove Melalui Pemantauan Citra Satelit</h1>
-            <h2>MANGROVE</h2>
+            <h2>Pemantauan Hutan Mangrove Dengan Citra Satelit Mangrove</h2>
             <p>Hutan mangrove merupakan sekumpulan pepohonan yang tumbuh di area sekitar garis pantai yang dipengaruhi oleh pasang surutnya air laut serta berada pada tempat yang mengalami akumulasi bahan organik dan pelumpuran.</p>
             <p>Ekosistem mangrove berperan sebagai pelindung pantai dari bahaya tsunami, sebagai penahan abrasi, pendaur hara, penjaga produktivitas perikanan pantai dan keanekaragaman hayati, peredam laju intrusi air laut, penyangga kesehatan dan penopang ekosistem pesisir lainnya.</p>
 
-            <h2>MANGROVE BUAT APA SIH,</h2>
-            <h1>PENTING?</h1>
+            <h2>MANGROVE BUAT APA SIH, PENTING ?</h2>
             <p>Berkurangnya hutan mangrove akan memicu timbulnya abrasi pantai dan sebaliknya abrasi pantai berperan penting dalam pengurangan luasan mangrove yang dipengaruhi oleh faktor-faktor ekologis, sosial, ekonomi dan budaya masyarakat setempat. Untuk itu model sistem dinamik keterkaitan faktor-faktor tersebut perlu untuk dikaji sebagai landasan metode/kebijakan penanganan kerusakan ekosistem mangrove dan abrasi pantai.</p>
 
             <h2>MANFAAT MANGROVE</h2>
@@ -51,8 +46,8 @@
 
         <script>
             let text = document.getElementById('text');
-            let bird1 = document.getElementById('bird1');
-            let bird2 = document.getElementById('bird2');
+            let satelit = document.getElementById('satelit');
+            let satelit1 = document.getElementById('satelit1');
             let btn = document.getElementById('btn');
             let rocks = document.getElementById('rocks');
             let forest = document.getElementById('forest');
@@ -63,10 +58,10 @@
                 let value = window.scrollY;
 
                 text.style.top = 50 + value * -0.5 + '%';
-                bird1.style.top = value * -1.5 + 'px';
-                bird2.style.left = value * 2 + 'px';
-                bird2.style.top = value * -1.5 + 'px';
-                bird2.style.left = value * -5 + 'px';
+                satelit.style.top = value * -1.5 + 'px';
+                satelit1.style.left = value * 2 + 'px';
+                satelit1.style.top = value * -1.5 + 'px';
+                satelit1.style.left = value * -5 + 'px';
                 btn.style.marginTop = value * 1.5 + 'px';
                 rocks.style.top = value * -0.12 + 'px';
                 forest.style.top = value * 0.25 + 'px';
