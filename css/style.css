@@ -130,13 +130,33 @@ section #text span {
 }
 
 .sec h2 {
-    font-size: 3.5em;
+    font-size: 2.8em;
     color: #fff;
     margin-bottom: 10px;
+    margin-top: 70px;
+
 }
 
 .sec p {
     font-size: 1em;
     color: #fff;
     margin-bottom: 5px;
+}
+
+.sec img {
+    border-radius: 8px;
+    width: 45%;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 80px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #094b65;
+    color: white;
+    text-align: center;
 }
