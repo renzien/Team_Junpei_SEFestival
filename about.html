@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lestari Mangrove</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo">Mangrove</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+    </ul>
+</header>
+<section>
+    <h2 id="text"><span>Pemantauan Citra Satelit</span><br>MANGROVE</h2>
+    <img src="assets/img/satelit.png" id="satelit">
+    <img src="assets/img/satelit1.png" id="satelit1">
+    <img src="assets/img/forest.png" id="forest">
+    <img src="assets/img/Mangrove.png" id="rocks">
+    <img src="assets/img/water.png" id="water">
+</section>
+<div class="sec">
+    <h2>Mangrove Buat Apa sih, Sebegitu Pentingnya ?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Integer bibendum tellus eu nulla iaculis ornare. Morbi sed nunc turpis. <br>
+        Curabitur luctus nisi at augue imperdiet, in euismod augue ullamcorper.</p>
+
+    <img src="assets/img/Permasalahan%20mangrove.jpg" style="float: left">
+    <h2>Permasalahan Yang Dihadapi</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Integer bibendum tellus eu nulla iaculis ornare. Morbi sed nunc turpis. <br>
+        Curabitur luctus nisi at augue imperdiet, in euismod augue ullamcorper.</p>
+
+    <img src="assets/img/mangrove%20ekosistem%202.jpg" style="float: right">
+    <h2>Solusi Yang Digunakan</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Integer bibendum tellus eu nulla iaculis ornare. Morbi sed nunc turpis.<br>
+        Curabitur luctus nisi at augue imperdiet, in euismod augue ullamcorper.</p>
+</div>
+<div class="footer">
+    <p>&copy; Team Junpei</p>
+</div>
+
+<script>
+    let text = document.getElementById('text');
+    let satelit = document.getElementById('satelit');
+    let satelit1 = document.getElementById('satelit1');
+    let rocks = document.getElementById('rocks');
+    let forest = document.getElementById('forest');
+    let water = document.getElementById('water');
+    let header = document.getElementById('header');
+
+    window.addEventListener('scroll', function (){
+        let value = window.scrollY;
+
+        text.style.top = 35 + value * -0.5 + '%';
+        satelit.style.top = value * -1.5 + 'px';
+        satelit1.style.left = value * 2 + 'px';
+        satelit1.style.top = value * -1.5 + 'px';
+        satelit1.style.left = value * -5 + 'px';
+        rocks.style.top = value * -0.12 + 'px';
+        forest.style.top = value * 0.25 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+</body>
+</html>
